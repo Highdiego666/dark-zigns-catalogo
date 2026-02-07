@@ -6,6 +6,38 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ===== TITULO NEON LED ANIMADO ===== */
+.neon-title {
+    font-size: 5rem; /* Más grande */
+    font-weight: bold;
+    text-align: left; /* Alineado a la izquierda */
+    background: linear-gradient(
+        270deg,
+        #ff0000,
+        #ff7f00,
+        #ffff00,
+        #00ff00,
+        #0000ff,
+        #4b0082,
+        #8f00ff,
+        #ff0000
+    );
+    background-size: 1600% 1600%; /* Para animar */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientFlow 10s ease infinite;
+    margin: 0;
+}
+
+/* Animación tipo flujo de agua de colores */
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
 /* ===== BODY ===== */
 body {
     background-color: #0b0b0f;
