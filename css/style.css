@@ -1,3 +1,4 @@
+/* ===== Reset básico ===== */
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +6,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ===== BODY ===== */
 body {
     background-color: #0b0b0f;
     color: #f5f5f5;
     line-height: 1.6;
 }
 
+/* ===== HEADER ===== */
 header {
     text-align: center;
     padding: 60px 20px;
@@ -31,12 +34,14 @@ header p {
     letter-spacing: 2px;
 }
 
+/* ===== SECCIÓN ===== */
 section {
     padding: 40px 20px;
     max-width: 1000px;
     margin: auto;
 }
 
+/* ===== TITULOS ===== */
 h2 {
     color: #ff2cff;
     margin-bottom: 20px;
@@ -45,12 +50,14 @@ h2 {
         0 0 10px #ff2cff;
 }
 
+/* ===== GRID CATALOGO ===== */
 .catalogo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
+/* ===== TARJETAS DE PRODUCTO ===== */
 .item {
     border: 1px solid #222;
     padding: 30px;
@@ -68,7 +75,7 @@ h2 {
         0 0 40px rgba(255, 44, 255, 0.4);
 }
 
-/* BOTON WHATSAPP */
+/* ===== BOTÓN WHATSAPP ===== */
 .whatsapp-button {
     position: fixed;
     bottom: 25px;
@@ -82,6 +89,9 @@ h2 {
     box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
     animation: pulse 2s infinite;
     transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .whatsapp-button:hover {
@@ -92,18 +102,14 @@ h2 {
         0 0 50px rgba(37, 211, 102, 0.8);
 }
 
+/* ===== ANIMACIÓN PULSO ===== */
 @keyframes pulse {
-    0% {
-        box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
-    }
-    50% {
-        box-shadow: 0 0 30px rgba(37, 211, 102, 1);
-    }
-    100% {
-        box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
-    }
+    0% { box-shadow: 0 0 10px rgba(37, 211, 102, 0.6); }
+    50% { box-shadow: 0 0 30px rgba(37, 211, 102, 1); }
+    100% { box-shadow: 0 0 10px rgba(37, 211, 102, 0.6); }
 }
 
+/* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 30px;
